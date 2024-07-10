@@ -9,7 +9,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
   };
 
   return (
-    <nav className={`navbar ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'} shadow-md py-4`}>
+    <nav className={`navbar ${isDarkMode ? 'dark bg-gray-800 text-white' : 'bg-white text-gray-800'} shadow-md py-4`}>
       <div className="container mx-auto flex justify-between items-center px-4">
         <a href="#" className="lg:text-2xl font-bold sm:text-xl">
           My Website
