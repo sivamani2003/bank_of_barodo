@@ -1,18 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 import "./Carousel.css";
 
 export const Carousel = ({ data }) => {
   const [slide, setSlide] = useState(0);
+  const [animating, setAnimating] = useState(false);
 
   const nextSlide = () => {
-    setSlide(slide === data.length - 1 ? 0 : slide + 1);
+    if (!animating) {
+      setAnimating(true);
+      setSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
+    }
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+    if (!animating) {
+      setAnimating(true);
+      setSlide((prev) => (prev === 0 ? data.length - 1 : prev - 1));
+    }
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => setAnimating(false), 500);
+    return () => clearTimeout(timer);
+  }, [slide]);
 
   return (
     <div className="carousel">
@@ -23,7 +35,9 @@ export const Carousel = ({ data }) => {
             src={item.src}
             alt={item.alt}
             key={idx}
-            className={slide === idx ? "slide" : "slide slide-hidden"}
+            className={`slide ${
+              slide === idx ? "slide-active" : "slide-hidden"
+            }`}
           />
         );
       })}
@@ -36,10 +50,15 @@ export const Carousel = ({ data }) => {
           return (
             <button
               key={idx}
-              className={
-                slide === idx ? "indicator" : "indicator indicator-inactive"
-              }
-              onClick={() => setSlide(idx)}
+              className={`indicator ${
+                slide === idx ? "indicator-active" : "indicator-inactive"
+              }`}
+              onClick={() => {
+                if (!animating) {
+                  setAnimating(true);
+                  setSlide(idx);
+                }
+              }}
             ></button>
           );
         })}
