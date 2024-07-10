@@ -4,6 +4,7 @@ import { Carousel } from "../Components/Carousel";
 import { slides } from "../data/carouselData.json";
 import About from "../Components/About";
 import Services from "../Components/Services";
+import Footer from '../Components/Footer';
 
 const Home = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -17,7 +18,7 @@ const Home = () => {
       <Carousel data={slides} />
       <About isDarkMode={isDarkMode}/>
       <Services isDarkMode={isDarkMode} />
-      
+      <Footer isDarkMode={isDarkMode}/>
     </div>
   )
 }
