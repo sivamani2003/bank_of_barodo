@@ -5,8 +5,8 @@ import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 const About = ({isDarkMode}) => {
   return (
-    <section className={`text-gray-600 body-font ${isDarkMode ? 'text-white bg-gray-800' : 'text-primary'}`}>
-      <div className="container px-5 py-24 mx-auto flex flex-wrap">
+    <section className={`text-gray-600 pt-9 body-font ${isDarkMode ? 'text-white bg-gray-800' : 'text-primary'}`}>
+      <div className="container px-5 py-6 mx-auto flex flex-wrap">
         <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden relative">
           <div className="relative w-full md:w-1/2 flex flex-col gap-4">
             <div className="relative">
@@ -60,8 +60,8 @@ const About = ({isDarkMode}) => {
               <IoCheckmarkCircleOutline style={{ fontSize: '30px', color: isDarkMode ? 'white' : 'black' }} className="mr-1 item2" /> Conduct a problem solving seminar every week.
             </p>
           </div>
-          <button className={`flex mr-auto ${isDarkMode ? 'text-black bg-white' : 'text-white bg-black'} border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded item3 font-semibold`}>
-            Try our doubt clearing session
+          <button className={`flex mr-auto ${isDarkMode ? 'text-black bg-white' : 'text-white bg-black'} border-0 py-2 px-6 focus:outline-none hover:bg-[#ca970b] rounded item3 font-semibold`}>
+            Try our Services and Earn
           </button>
         </div>
       </div>

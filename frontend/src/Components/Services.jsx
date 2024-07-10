@@ -5,7 +5,7 @@ import { IoPeople } from "react-icons/io5";
 
 const Services = ({ isDarkMode }) => {
   return (
-    <div className={`${isDarkMode?'text-white bg-gray-800' : 'text-primary'}`}>
+    <div className={`${isDarkMode?'text-white bg-gray-800' : 'text-primary'} `}>
         <section className={`pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] items-center lg:ml-20 sm:mr-10`} >
       <div className="container">
         <div className="flex flex-wrap -mx-4">

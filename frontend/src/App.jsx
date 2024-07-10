@@ -1,27 +1,16 @@
-import React,{useState} from 'react'
-import Navbar from './Components/Navbar'
-import './App.css'
-import Services from './Components/Services'
-import { Carousel } from "./Components/Carousel";
-
-import { slides } from "./data/carouselData.json";
-import About from './Components/About';
+import React from 'react'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Home from './Pages/Home'
 const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   return (
-    <div className={isDarkMode ? 'dark' : 'light'}>
-      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <Carousel data={slides} />
-      <About isDarkMode={isDarkMode}/>
-      <Services isDarkMode={isDarkMode} />
-      
-    </div>)
-
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </Router>
+    </div>
+  )
 }
 
 export default App
