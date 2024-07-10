@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
-import { MdLightMode, MdOutlineMenu, MdClose } from "react-icons/md";
+import { MdLightMode, MdOutlineMenu, MdClose } from 'react-icons/md';
 
-function Navbar() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+function Navbar({ isDarkMode, toggleDarkMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav className={`navbar ${isDarkMode ? 'dark bg-gray-800 text-white' : 'bg-white text-gray-800'} shadow-md py-4`}>
+    <nav className={`navbar ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'} shadow-md py-4`}>
       <div className="container mx-auto flex justify-between items-center px-4">
         <a href="#" className="lg:text-2xl font-bold sm:text-xl">
           My Website
@@ -51,8 +46,8 @@ function Navbar() {
           </button>
           <button className={`mx-auto ml-4 py-2 px-4 text-lg rounded ${
             isDarkMode
-              ?  'text-black bg-white border border-black hover:bg-gray-200' 
-              :'text-white bg-black border border-white hover:bg-gray-800'
+              ? 'text-black bg-white border border-black hover:bg-gray-200'
+              : 'text-white bg-black border border-white hover:bg-gray-800'
           }`}>
             Signup
           </button>
