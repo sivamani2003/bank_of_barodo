@@ -1,5 +1,14 @@
-import Navbar from "../Components/Navbar";
-import { Carousel } from "../Components/Carousel";
-import { slides } from "../data/carouselData.json";
-import About from "../Components/About";
-import Services from "../Components/Services";
+import React from 'react'
+import Navbar from '../Components/Navbar'
+import About_exp from '../Components/About_exp'
+
+const About = () => {
+  return (
+    <div className="relative">
+      <Navbar />
+      <About_exp />
+    </div>
+  )
+}
+
+export default About
