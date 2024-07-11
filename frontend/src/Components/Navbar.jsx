@@ -9,25 +9,30 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
   };
 
   return (
-    <nav className={`navbar ${isDarkMode ? 'dark bg-gray-800 text-white' : 'bg-white text-gray-800'} shadow-md py-4`}>
+    <nav className={`navbar  ${isDarkMode ? 'dark bg-gray-800 text-white' : 'bg-white text-gray-800'} shadow-md py-4`}>
       <div className="container mx-auto flex justify-between items-center px-4">
         <a href="#" className="lg:text-2xl font-bold sm:text-xl">
           My Website
         </a>
         <ul className="hidden md:flex space-x-4 text-xl">
           <li className="nav-item">
-            <a href="#" className="nav-link hover:text-[#ca970b]">
+            <a href="/" className="nav-link hover:text-[#ca970b]">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link hover:text-[#ca970b]">
+            <a href="/about" className="nav-link hover:text-[#ca970b]">
               About
             </a>
           </li>
           <li className="nav-item">
             <a href="#" className="nav-link hover:text-[#ca970b]">
               Services
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link hover:text-[#ca970b]">
+              Blogs
             </a>
           </li>
           <li className="nav-item">
