@@ -19,8 +19,8 @@ const Home = () => {
       <Carousel data={slides} />
       <About isDarkMode={isDarkMode}/>
       <Services isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode}/>
       <Mission></Mission>
+      <Footer isDarkMode={isDarkMode}/>
       
     </div>
   )
