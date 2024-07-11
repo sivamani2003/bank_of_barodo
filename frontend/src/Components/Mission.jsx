@@ -31,8 +31,8 @@ const Mission = () => {
         </p>
       </div>
       <div
-        className="div1 p-5 gap-5 background-image border-8 p-5"
-        style={{ backgroundColor: "lightblue", paddingRight: "100px" }}
+        className="div1 p-5 gap-5 background-image border-8 p-5 opacity-70"
+        style={{ backgroundColor: "rgb(31 41 55)", paddingRight: "100px" }}
       >
         <h1
           className="font-bold

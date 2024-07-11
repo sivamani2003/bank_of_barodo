@@ -18,9 +18,10 @@ const Home = () => {
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Carousel data={slides} />
       <About isDarkMode={isDarkMode}/>
+      
       <Services isDarkMode={isDarkMode} />
-      <Mission></Mission>
       <Footer isDarkMode={isDarkMode}/>
+      <Mission></Mission>
       
     </div>
   )
