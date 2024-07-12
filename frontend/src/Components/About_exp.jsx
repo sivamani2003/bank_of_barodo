@@ -12,7 +12,7 @@ const About_exp = ({ isDarkMode }) => {
   return (
     <div>
       <section className={`relative text-gray-600 body-font overflow-hidden ${isDarkMode ? 'bg-gray-800' : 'bg-[#f9f9f9]'}`}>
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5  mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-auto object-cover object-center rounded" src={img} />
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">

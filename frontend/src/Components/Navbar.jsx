@@ -30,7 +30,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link hover:text-[#ca970b]">
+            <a href="/services" className="nav-link hover:text-[#ca970b]">
               Services
             </a>
           </li>
@@ -40,7 +40,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link hover:text-[#ca970b]">
+            <a href="/contact" className="nav-link hover:text-[#ca970b]">
               Contact
             </a>
           </li>

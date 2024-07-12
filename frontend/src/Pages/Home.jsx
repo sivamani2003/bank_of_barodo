@@ -6,6 +6,7 @@ import About from "../Components/About";
 import Services from "../Components/Services";
 import Footer from '../Components/Footer';
 import Mission from '../Components/Mission';
+import Team from '../Components/Team';
 
 const Home = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
       <About isDarkMode={isDarkMode}/>
       <Mission></Mission>
       <Services isDarkMode={isDarkMode} />
+      <Team/>
       <Footer isDarkMode={isDarkMode}/>
       
       

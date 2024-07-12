@@ -13,8 +13,8 @@ const ContactForm = ({isDarkMode}) => {
           </p>
           <div className="mb-6">
             <h3 className="font-bold">Headquarters</h3>
-            <p>9863 - 9867 MILL ROAD, CAMBRIDGE, MG09 99HT.</p>
-            <p>Telephone: +1 800 603 6035</p>
+            <p>Assam lo akkada adigna cheptharu.</p>
+            <p>Telephone: +91 7777777777</p>
             <p>Email: <a href="mailto:mail@demolink.org" className="text-blue-500">mail@demolink.org</a></p>
           </div>
           <div>

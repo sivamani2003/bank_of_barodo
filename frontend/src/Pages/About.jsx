@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import About_exp from "../Components/About_exp";
 import About_company from "../Components/About_company";
+import Mission from "../Components/Mission";
 
 const About = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,6 +25,7 @@ const About = () => {
       </div>
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <About_company isDarkMode={isDarkMode} />
+      <Mission/>
       <About_exp isDarkMode={isDarkMode} />
     </div>
   );

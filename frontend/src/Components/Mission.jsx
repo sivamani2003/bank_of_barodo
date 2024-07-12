@@ -3,7 +3,7 @@ import "./Mission.css";
 
 const Mission = () => {
   return (
-    <div class="grid grid-cols-2 mb-5">
+    <div class="grid grid-cols-2 ">
       <div
         className="div1 p-5 gap-4"
         style={{ backgroundColor: "whitesmoke", paddingLeft: "100px" }}
