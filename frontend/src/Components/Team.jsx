@@ -4,7 +4,7 @@ import img2 from '../assets/aetesh.png'
 const Team = ({isDarkMode}) => {
   return (
     <div>
-    <div class="mb-16">
+    <div class="">
             <dh-component className={`${isDarkMode?'bg-gray-800 text-white':'bg-white'}`}>
                 <div className={`${isDarkMode?'bg-gray-800 text-white':'bg-white'}`}>
                     <div class={`container flex justify-center mx-auto pt-3 `}>
