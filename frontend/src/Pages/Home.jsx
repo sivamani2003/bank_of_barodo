@@ -21,7 +21,7 @@ const Home = () => {
       <About isDarkMode={isDarkMode}/>
       <Mission></Mission>
       <Services isDarkMode={isDarkMode} />
-      <Team/>
+      <Team isDarkMode={isDarkMode}/>
       <Footer isDarkMode={isDarkMode}/>
       
       
