@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Services from './Pages/Services'
 import Contact from './Pages/Contact'
+import Finance from './Pages/Finance'
 const App = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const App = () => {
           <Route path='/about' element={<About/>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/finance' element={<Finance/>}/>
         </Routes>
       </Router>
     </div>
